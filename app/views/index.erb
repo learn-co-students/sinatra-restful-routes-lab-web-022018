@@ -1,0 +1,12 @@
+
+<h1> All Recipes </h1>
+<% if @recipes %>
+<ul>
+  <% @recipes.each do |recipe| %>
+    <li>Name: <%= recipe.name %> </li> <br>
+    <li>Ingredients: <%= recipe.ingredients %> </li><br>
+    <li>Cooking Time: <%= recipe.cook_time %> </li>
+    <a href="http://localhost:9393/recipes/<%= recipe.id %>">Link</a>
+  <% end %>
+</ul>
+<% end %>
