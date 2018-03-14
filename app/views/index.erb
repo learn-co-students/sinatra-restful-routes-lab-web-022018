@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    Welcome to the recipes page
+    Recipes.size::<%=@recipes.size %><p></p>
+    Recipes.first::<%=@recipes.first.name %>
+    <p>@@@@@@@@@@@@@@@@@</p>
+
+    <ul>
+
+
+<% @recipes.each do |r| %>
+  <a href="/recipes/<%= r.id%>">
+  name:<%= r.name%></a> ingredients: <%= r.ingredients%> cook_time: <%=r.cook_time %> 
+<br>
+<% end %>
+
+  </ul>
+  </body>
+</html>

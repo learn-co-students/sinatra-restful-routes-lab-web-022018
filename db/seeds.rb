@@ -1,0 +1,5 @@
+Recipe.create(name: "pie", ingredients: "wheat, eggs, apple, sugar", cook_time: "2 hours")
+Recipe.create(name: "cake", ingredients: "wheat, eggs, milk, sugar", cook_time: "3 hours")
+Recipe.create(name: "rice", ingredients: "rice, water, salt", cook_time: "20 minutes")
+Recipe.create(name: "flower tea", ingredients: "flower stems, water, sugar", cook_time: "5 minutes")
+Recipe.create(name: "ice cream", ingredients: "milk, sugar, cream, eggs", cook_time: "45 minutes")
